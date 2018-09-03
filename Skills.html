@@ -4,11 +4,18 @@
 <head>
 <style>
 th.solid {border-style: solid;}
-tb.solid {border-style: solid;}
+td.solid {border-style: solid; border-width: 1px;}
+table {
+    border-collapse: collapse;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
+<link href="css/style.css" 
+ rel="stylesheet" 
+ type="text/css" />
 </head>
 <body>
-	<nav id="navigation">
+	<nav class="navigation">
 		<a href="About.html"> About</a>     
 		<a href="Projects.html"> Projects</a>     
 		<a href="Contact.html"> Contact</a>     
@@ -26,9 +33,18 @@ tb.solid {border-style: solid;}
 			<tbody>
 				<tr>
 					<td class="solid">Agile Methodologies</td>
-					<td class="solid">Knowledge of methodologies such as<br>
-					Scrum, Kanban and XP</td>
+					<td class="solid">
+						<ul>
+							<li padding-right: 10px>Knowledge of methodologies such as
+							Scrum, Kanban and XP
+							</li>
+						</ul>
+					</td>
 				</tr>
+				<tr>
+					<td class="solid">SQL</td>
+					<td class="solid">Basics of various data libraries.<br>
+					How to set up tables, views etc.</td>
 			<tbody>
 		</table>
 	</div>
